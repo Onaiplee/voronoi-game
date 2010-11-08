@@ -3,6 +3,26 @@ require 'socket'
 host, port = ARGV
 
 ######### First divide the whole grid in to 50X50 sub squares ########
+
+class Squares
+  def initialize(x,y)
+      @grids = Array.new(x) { Array.new(y,0) }
+      self.score_generate
+  end
+
+private
+  def score_generate
+  end 
+
+end 
+
+class Grid
+  access_attr :if
+  def initialize()
+  end
+  
+end
+
 squares = Array.new(50) { Array.new(50,0) }
 $values = Array.new(50) { Array.new(50,0) }
 def center(square_x, square_y)
